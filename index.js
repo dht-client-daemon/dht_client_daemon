@@ -34,7 +34,7 @@ dhtClients.forEach(function(dht) {
   });
 });
 
-app.listen(3000, function () {
+app.listen(3000, '0.0.0.0', function () {
   console.log('Server has started, open in your browser http://localhost:3000');
 });
 
