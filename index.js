@@ -52,6 +52,9 @@ function cleanPeerCache(hash) {
   delete dhtPeers[hash];
 }
 
+app.get('/alive.txt', function(req, res) {
+  res.send("OK");
+});
 
 app.get('/dht-peers', function (req, res) {
   var hashes = req.query.hashcsv.split(",")
